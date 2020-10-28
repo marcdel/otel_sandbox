@@ -1,0 +1,2 @@
+defmodule OtelSandbox do
+end
