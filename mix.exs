@@ -22,11 +22,13 @@ defmodule OtelSandbox.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:opentelemetry, "~> 0.4.0"},
-      {:opentelemetry_api, "~> 0.3.2"},
-      {:opentelemetry_honeycomb, "~> 0.3.0-rc.0"},
-      {:poison, ">= 1.5.0"},
-      {:hackney, ">= 1.11.0"}
+      {:opentelemetry, github: "open-telemetry/opentelemetry-erlang", tag: "master", sparse: "apps/opentelemetry"},
+      {:opentelemetry_api, github: "open-telemetry/opentelemetry-erlang", tag: "master", sparse: "apps/opentelemetry_api"},
+#      {:opentelemetry, "~> 0.4.0"},
+#      {:opentelemetry_api, "~> 0.3.2"},
+#      {:opentelemetry_honeycomb, "~> 0.3.0-rc.0"},
+#      {:poison, ">= 1.5.0"},
+#      {:hackney, ">= 1.11.0"}
     ]
   end
 end
